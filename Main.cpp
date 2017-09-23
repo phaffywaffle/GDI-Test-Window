@@ -78,7 +78,7 @@ WinMain(HINSTANCE hInstance,
 	ScreenHeight = GetSystemMetrics(1);
 	WindowWidth = ScreenWidth / 3;
 	WindowHeight = ScreenHeight / 3;
-	HWND Window = CreateWindowEx(WS_EX_CLIENTEDGE, "Placeholder_Class_Name", "Placeholder_Title", WS_POPUP | WS_VISIBLE, WindowWidth, WindowHeight, WindowWidth, WindowHeight, 0, 0, hInstance, 0);
+	HWND Window = CreateWindowEx(0, "Placeholder_Class_Name", "Placeholder_Title", WS_POPUP | WS_VISIBLE, WindowWidth, WindowHeight, WindowWidth, WindowHeight, 0, 0, hInstance, 0);
 	if (!Window) err("Failed to create window", -2);
 
 	Running = true;
